@@ -186,21 +186,11 @@ width: 30%;
     margin: 60px auto 0 auto;
   
   }
-.carousel-item{
-    position: relative;
-    display: flex;
-    float: left;
-    width: 100%;
-    margin-right: -100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    /* transition: transform .6s ease-in-out; */
-    justify-content: center;
-}
+
  
   .w-70{
     
-    width: 70% !important;
+    width: 50% !important;
 
     
   }
@@ -221,6 +211,10 @@ width: 30%;
 
     filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7)); 
    
+}
+.card-img .card-img-top{
+    width: 50% important!;
+
 }
 .card-conte{
     display: flex;
@@ -343,7 +337,7 @@ width: 30%;
         }
         .w-70{
     
-            width: 30% !important;
+            width: 30% ;
         
             
         }
