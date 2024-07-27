@@ -344,7 +344,10 @@ width: 30%;
     
     
 }
-
+.textarea{
+    width: 500px; 
+    height: 200px;
+}
 
 @media screen and (max-width: 920px) {
     .header .nav-var ul{
@@ -394,6 +397,11 @@ width: 30%;
         
             
         }
+
     
+    .textarea{
+        width: 180px; 
+        height: 80px;
+    }
     
 }
