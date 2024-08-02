@@ -28,7 +28,7 @@ padding: 5px;
         color: antiquewhite; 
         padding-left: 10px;
         align-items: flex-start;
-        padding: 8px;
+       
         justify-content: flex-end;
 }
     
@@ -53,6 +53,7 @@ padding: 5px;
     display: flex;
     align-items: center;
     width: 100%;
+    z-index: 9999;
 }
 
 .header .nav-var  {
@@ -106,8 +107,8 @@ h2{
     color: rgb(161, 160, 160);
     font-family: Chakra Petch    ;
      text-align: center;
-     font-size: 150px;
-         padding: 40px;
+     font-size: 300%;
+     padding: 40px;
    
 }
 #topbar a{
@@ -217,7 +218,7 @@ width: 30%;
     justify-content: center
 }
 .card{
-
+    width: 23%;
     filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7)); 
    
 }
@@ -300,20 +301,43 @@ width: 30%;
     filter: drop-shadow(5px, 4px, 4px black);
   
 }
+.textarea{
+    width: 500px; 
+    height: 200px;
+}
+
+@media screen and (min-width: 1440px) {
+.nav-var ul li a{
+    font-size: x-large;
+    font-family: orbitron;
+    text-decoration: none;
+    color:#000;
+    text-shadow: 1px 1px 1px rgb(55, 55, 55), 0 0 1px black, 0 0 5px #000;
+  
+  
+}
+}
 
 @media screen and (max-width: 924px) {
     .header .nav-var ul{
         display: flex;
         list-style-type: none;
-        align-items: flex-start;
+        align-items: center;
         flex-direction: column;
+    }
+    .style-font p {
+        font-family: Orbitron; 
+        font-family: Arsenal SC;
+        font-size: x-large;
+        text-align: center;
+        text-shadow: 1px 1px 1px rgb(174, 175, 175), 0 0 1px rgb(19, 8, 116), 0 0 5px #000;
     }
     .img-logo{
 
-        width: 100%;
-        
+        width: 80%;
             
         }
+  
         .header{
 
             position: relative;
@@ -323,6 +347,11 @@ width: 30%;
             display: flex;
             align-items: center;
             width: 100%;
+        }
+        .card{
+            width: 40%;
+            filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7)); 
+           
         }
         .formdecontacto{
   
@@ -344,21 +373,12 @@ width: 30%;
             font-size: medium;
             text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px #000;
         }
-        .w-70{
-    
-            width: 30% ;
-        
-            
-        }
+     
     
     
-}
-.textarea{
-    width: 500px; 
-    height: 200px;
 }
 
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 600px) {
     .header .nav-var ul{
         display: flex;
         list-style-type: none;
@@ -366,12 +386,9 @@ width: 30%;
         flex-direction: column;
     }
     .img-logo{
-
-        width: 60%;
-        
-            
+        width: 60%;        
         }
-        .header{
+    .header{
 
             position: relative;
             top: 0px;
@@ -381,8 +398,7 @@ width: 30%;
             align-items: center;
             width: 100%;
         }
-        .formdecontacto{
-  
+    .formdecontacto{
             display: flex;
             justify-content: center;
             align-items: center;
@@ -392,7 +408,12 @@ width: 30%;
             filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
            
         }
-        .input{
+        .card{
+            width: 100%;
+            filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7)); 
+           
+        }
+    .input{
             font-size: 6px;
             color: white;
             font-weight: bold;
@@ -400,11 +421,12 @@ width: 30%;
             text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px #000;
 
         }
-        .w-70{
-    
-            width: 30% ;
-        
-            
+     .style-font p {
+            font-family: Orbitron; 
+            font-family: Arsenal SC;
+            font-size:small;
+            text-align: center;
+            text-shadow: 1px 1px 1px rgb(174, 175, 175), 0 0 1px rgb(19, 8, 116), 0 0 5px #000;
         }
 
     
@@ -413,4 +435,15 @@ width: 30%;
         height: 80px;
     }
     
+}
+
+.carousel {
+    display: flex;
+    justify-content:center;
+}
+
+.carousel-inner {
+    position: relative;
+    width: 55%;
+    overflow: hidden;
 }
